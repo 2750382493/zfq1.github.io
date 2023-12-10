@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var pic=new Array;
+        pic[0]='image/0b7b02087bf40ad162d90e22587406dfa9ec8b1360e3.webp';
+        pic[1]='image/060828381f30e924b8995af0435079061d950b7b59e3.webp';
+        pic[2]='image/222fdfc039245d688d43f1c55be956a1ed21b0ff48eb1.webp';
+        pic[3]='image/e1fe9925bc315c6034a82d2d82e9dc1349540823d9e3.webp';
+        parseInt(Math.random()*(pic.length),10);
+        var choose=Math.floor(Math.random()*(pic.length));
+        document.write('<img src="'+pic[choose]+'">');
+    </script>
+    
+    <h1><a href="#" onclick="history.go(-1); return false;">返回</a></h1>
+</body>
+</html>
